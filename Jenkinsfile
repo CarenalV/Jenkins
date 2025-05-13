@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        maven 'Maven3.8'
+    }
+    
     environment {
         DOCKER_IMAGE = 'myapp:latest'
     }
